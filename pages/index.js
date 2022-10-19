@@ -36,6 +36,7 @@ export default function Home() {
                 <title>Med-Ex</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
                       rel="stylesheet" type="text/css"/>
+                <link rel="icon" href="/medexLogo.ico" />
             </Head>
             <nav className={`navbar navbar-light  sticky fixed-top ${scrollDirection === "down" ? "hide" : "show"}`}>
                 {/*<div className="container">*/}
@@ -96,7 +97,7 @@ export default function Home() {
             </header>
 
             {/*Image Showcases*/}
-            <section className="showcase" id="about">
+            <section className="showcase pb-0 mb-0" id="about">
                 {/*<h2  className="text-center"> Who are we?</h2>*/}
                 {/*<br/>*/}
                 <div className="container-fluid p-0">
@@ -148,7 +149,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="features-icons bg-light text-center" id="operate">
+            <section className="features-icons bg-light text-center pt-0 mt-0" id="operate">
                 <h2></h2>
                 <div className="container">
                     <div className="row">
@@ -229,7 +230,7 @@ export default function Home() {
             {/*Testimonials*/}
             <section className="testimonials text-center bg-light" id="testimonial">
                 <div className="container">
-                    {/*<h2 className="mb-5">What people are saying...</h2>*/}
+                    <h2 className="mb-5 fs-1">Testimonial</h2>
                     <div className="row">
                         <div className="col-lg">
                             {/*<div className="testimonial-item mx-auto mb-5 mb-lg-0">*/}
