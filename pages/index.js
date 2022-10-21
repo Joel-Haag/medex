@@ -39,7 +39,7 @@ export default function Home() {
 
         <div>
             <Head>
-                <title>Med-Ex</title>
+                <title>Med-Ex Medical Billing</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
                       rel="stylesheet" type="text/css"/>
                 <link rel="icon" href="/medexLogo.ico" />
