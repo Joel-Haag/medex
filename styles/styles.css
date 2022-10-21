@@ -4541,7 +4541,7 @@ li.timeline-item::before {
 }
 
 .hide {
-    top: -12rem !important;
+    top: -15rem !important;
 }
 
 .navbar > .container,
