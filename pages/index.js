@@ -477,7 +477,8 @@ export default function Home() {
                         <div className="col-lg-6 h-100 text-center text-lg-start my-auto">
                             <ul className="list-inline mb-2">
                                 <li className="list-inline-item">⋅</li>
-                                <li className="list-inline-item"><p> Whatsapp or call us on - 066 221 0163</p></li>
+                                {/*<li className="list-inline-item"><p> Whatsapp or call us on - 066 221 0163</p></li>*/}
+                                <i className="bi bi-telephone-fill"> </i><a href="tel:066 221 0163">066 221 0163</a>
                                 <li className="list-inline-item float-end"><a href="mailto:medex@isat.co.za">medex@isat.co.za</a></li>
 
                             </ul>
