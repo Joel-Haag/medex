@@ -2,6 +2,10 @@ import React, {useEffect, useState} from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import testimonial3 from "../public/img/testimonials-3.jpg"
+import workingwoman1 from "../public/img/workingwoman1.jpg"
+import workingwoman2 from "../public/img/workingwoman2.jpg"
+import workingwoman3 from "../public/img/workingwoman3.jpg"
+import workingwoman4 from "../public/img/workingwoman4.jpg"
 import Link from "next/link";
 
 function useScrollDirection() {
@@ -149,23 +153,23 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="features-icons bg-light text-center pt-0 mt-0" id="operate">
-                <h2></h2>
-                <div className="container">
+            <section className="features-icons bg-white text-center pt-0 mt-5" id="operate">
+                <h2> How we Operate</h2>
+                <div className="bg-white mt-5">
                     <div className="row">
-                        <div className="col-lg-4">
-                            <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div className="col-lg-4 card" data-aos={"fade-in"} data-aos-easing="ease-in-sine">
+                            <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 card-body">
                                 <div className="features-icons-icon d-flex"><i
-                                    className="bi-1-square-fill m-auto text-primary"></i></div>
+                                    className="bi-1-square-fill m-auto"></i></div>
                                 {/*<h3>Always on time</h3>*/}
                                 <p className="lead mb-0">We run strictly 30-day accounts. Straight after month end final
                                     notices are sent out for 60-day accounts.</p>
                             </div>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div className="col-lg-4 card" data-aos={"fade-in"} data-aos-easing="ease-in-sine">
+                            <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 card-body">
                                 <div className="features-icons-icon d-flex"><i
-                                    className="bi-2-square-fill m-auto text-primary"></i></div>
+                                    className="bi-2-square-fill m-auto"></i></div>
                                 {/*<h3>Bootstrap 5 Ready</h3>*/}
                                 <p className="lead mb-0">Once completed, we commence with calling each patient in 60
                                     days,
@@ -173,10 +177,10 @@ export default function Home() {
                                     we are able to do. </p>
                             </div>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="features-icons-item mx-auto mb-0 mb-lg-3">
+                        <div className="col-lg-4 card" data-aos={"fade-in"} data-aos-easing="ease-in-sine">
+                            <div className="features-icons-item mx-auto mb-0 mb-lg-3 card-body">
                                 <div className="features-icons-icon d-flex"><i
-                                    className="bi-3-square-fill m-auto text-primary"></i></div>
+                                    className="bi-3-square-fill m-auto"></i></div>
                                 {/*<h3>Easy to Use</h3>*/}
                                 <p className="lead mb-0">We then hand over to Van Rhyns Attorneys. (We never waiver from
                                     this collection process.)
@@ -187,10 +191,10 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-4">
-                            <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div className="col-lg-4 card" data-aos={"fade-in"} data-aos-easing="ease-in-sine">
+                            <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 card-body">
                                 <div className="features-icons-icon d-flex"><i
-                                    className="bi-4-square-fill m-auto text-primary"></i></div>
+                                    className="bi-4-square-fill m-auto"></i></div>
                                 {/*<h3>Always on time</h3>*/}
                                 <p className="lead mb-0">Van Rhyns send out final demands and if no response is received
                                     also send SMS’s and make calls to the patient.
@@ -198,10 +202,10 @@ export default function Home() {
                                     (in our experience we have found that this process has good results)</p>
                             </div>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <div className="col-lg-4 card" data-aos={"fade-in"} data-aos-easing="ease-in-sine">
+                            <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 card-body">
                                 <div className="features-icons-icon d-flex"><i
-                                    className="bi-5-square-fill m-auto text-primary"></i></div>
+                                    className="bi-5-square-fill m-auto"></i></div>
                                 {/*<h3>Bootstrap 5 Ready</h3>*/}
                                 <p className="lead mb-0">Each month we are provided with a full list of the accounts
                                     handed over.
@@ -211,10 +215,10 @@ export default function Home() {
                                     matter. </p>
                             </div>
                         </div>
-                        <div className="col-lg-4">
-                            <div className="features-icons-item mx-auto mb-0 mb-lg-3">
+                        <div className="col-lg-4 card" data-aos={"fade-in"} data-aos-easing="ease-in-sine">
+                            <div className="features-icons-item mx-auto mb-0 mb-lg-3 card-body">
                                 <div className="features-icons-icon d-flex"><i
-                                    className="bi-6-square-fill m-auto text-primary"></i></div>
+                                    className="bi-6-square-fill m-auto"></i></div>
                                 {/*<h3>Easy to Use</h3>*/}
                                 <p className="lead mb-0">We have to add that when doing the credit control, we still
                                     attempt to collect the old debt ourselves.
@@ -227,8 +231,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            {/*Testimonials*/}
-            <section className="testimonials text-center bg-light" id="testimonial">
+
+
+            <section className="testimonials text-center bg-white mt-0 pt-0" id="testimonial">
                 <div className="container">
                     <h2 className="mb-5 fs-1">Testimonial</h2>
                     <div className="row">
@@ -255,36 +260,105 @@ export default function Home() {
                             </p>
                             {/*</div>*/}
                         </div>
-                        {/*<div className="col-lg-4">*/}
-                        {/*    <div className="testimonial-item mx-auto mb-5 mb-lg-0">*/}
-                        {/*        <Image*/}
-                        {/*            className="img-fluid rounded-circle mb-3"*/}
-                        {/*            src={testimonial2}*/}
-                        {/*            alt="..."*/}
-                        {/*        />*/}
-                        {/*        <h5>Fred S.</h5>*/}
-                        {/*        <p className="font-weight-light mb-0">Bootstrap is amazing. Ive been using it to create*/}
-                        {/*            lots of super*/}
-                        {/*            nice landing pages.</p>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-                        {/*<div className="col-lg-4">*/}
-                        {/*    <div className="testimonial-item mx-auto mb-5 mb-lg-0">*/}
-                        {/*        <Image*/}
-                        {/*            className="img-fluid rounded-circle mb-3"*/}
-                        {/*            src={testimonial3}*/}
-                        {/*            alt="..."*/}
-                        {/*        />*/}
-                        {/*        <h5>Sarah W.</h5>*/}
-                        {/*        <p className="font-weight-light mb-0">Thanks so much for making these free resources*/}
-                        {/*            available to*/}
-                        {/*            us!</p>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
+
                     </div>
                 </div>
             </section>
-            {/*Call to Action*/}
+            <div className="team-boxed bg-white">
+                <h2 className="text-center fw-normal">PROUDLY WOMAN EMPOWERED</h2>
+                <h3 className="text-center">Feel free to contact us directly for more information</h3>
+                <div className="container">
+                    <div className="intro">
+                        {/*<h2 className="text-center">THE TEAM</h2>*/}
+                        {/*<p className="text-center">T</p>*/}
+                    </div>
+                    <div className="row people">
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box">
+                                <Image
+                                className="rounded-circle"
+                                src={testimonial3}
+                                alt="..."
+                            />
+                                <h3 className="name">Natalie</h3>
+                                <a className="" href="mailto:natalie@medexbureau.co.za">natalie@medexbureau.co.za</a>
+                                <p className="description">011 867 0191</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box"><Image
+                                className="rounded-circle"
+                                src={testimonial3}
+                                alt="..."/>
+                                <h3 className="name">Sina</h3>
+                                <a className="" href="mailto:sina@medexbureau.co.za">sina@medexbureau.co.za</a>
+                                <p className="description">011 867 4597</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box"><Image
+                                className="rounded-circle"
+                                src={testimonial3}
+                                alt="..."/>
+                                <h3 className="name">Claudia</h3>
+                                <a className="" href="mailto:claudia@medexbureau.co.za">claudia@medexbureau.co.za</a>
+                                <p className="description">011 867 2975</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box"
+                            //      style={{
+                            //     backgroundImage: "url(img/businesscard.png)" ,
+                            // }}
+                            >
+                                {/*<Image*/}
+                                {/*className="rounded-circle"*/}
+                                {/*src={testimonial3}*/}
+                                {/*alt="..."/>*/}
+                                <h3 className="name">Kelly</h3>
+                                <a className="" href="mailto:kelly@medexbureau.co.za">kelly@medexbureau.co.za</a>
+                                <p className="description">011 867 8178</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box">
+                                {/*<Image*/}
+                                {/*className="rounded-circle"*/}
+                                {/*src={testimonial3}*/}
+                                {/*alt="..."/>*/}
+                                <h3 className="name">Dominique</h3>
+                                <a className="" href="mailto:dominique@medexbureau.co.za">dominique@medexbureau.co.za</a>
+                                <p className="description">..</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box">
+                                {/*<Image*/}
+                                {/*className="rounded-circle"*/}
+                                {/*src={testimonial3}*/}
+                                {/*alt="..."/>*/}
+                                <h3 className="name">Candice</h3>
+                                <a className="" href="mailto:candice@medexbureau.co.za">candice@medexbureau.co.za</a>
+                                <p className="description">..</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box">
+                                {/*<Image*/}
+                                {/*className="rounded-circle"*/}
+                                {/*src={testimonial3}*/}
+                                {/*alt="..."/>*/}
+                                <h3 className="name">Ashlea</h3>
+                                <a className="" href="mailto:ashlea@medexbureau.co.za">ashlea@medexbureau.co.za</a>
+                                <p className="description">..</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
             <section className="call-to-action text-white text-center" id="contact">
                 <div className="container position-relative">
                     <div className="row justify-content-center">
@@ -305,11 +379,7 @@ export default function Home() {
                                     <div className="col-md-6 col-sm-12 pb-2">
                                         <input className="form-control form-control-lg" id="fname"
                                                type="text"
-                                               placeholder="First Name" data-sb-validations="required"/>
-                                        <div className="invalid-feedback text-white"
-                                             data-sb-feedback="emailAddressBelow:required">First
-                                            Name is required.
-                                        </div>
+                                               placeholder="First Name"/>
                                     </div>
                                     <div className="col-md-6 col-sm-12 pb-2">
                                         <input className="form-control form-control-lg" id="lname"
@@ -336,15 +406,13 @@ export default function Home() {
                                     <div className="col-md-12 col-sm-12 pb-2">
                                         <input className="form-control form-control-lg mb-2" id="ftext"
                                                type="text"
-                                               placeholder="How can we help you?" data-sb-validations="required"/>
-                                        <div className="invalid-feedback text-white"
-                                             data-sb-feedback="emailAddressBelow:required">Text is required
-                                        </div>
+                                               placeholder="How can we help you?"/>
+
                                     </div>
                                 </div>
                                 <div className={'row'}>
                                     <div className="col-md-12 col-sm-12">
-                                        <button className="btn btn-primary btn-lg" id="submitButton"
+                                        <button className="btn btn-primary btn-lg form-control" id="submitButton"
                                                 type="submit">Submit
                                         </button>
                                     </div>
@@ -379,15 +447,12 @@ export default function Home() {
                     <div className="row">
                         <div className="col-lg-6 h-100 text-center text-lg-start my-auto">
                             <ul className="list-inline mb-2">
-                                <li className="list-inline-item"><a href="#!">About</a></li>
                                 <li className="list-inline-item">⋅</li>
-                                <li className="list-inline-item"><a href="#!">Contact</a></li>
-                                <li className="list-inline-item">⋅</li>
-                                <li className="list-inline-item"><a href="#!">Terms of Use</a></li>
-                                <li className="list-inline-item">⋅</li>
-                                <li className="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                                <li className="list-inline-item"><p> Whatsapp or call us on - 066 221 0163</p></li>
+                                <li className="list-inline-item float-end"><a href="mailto:medex@isat.co.za">medex@isat.co.za</a></li>
+
                             </ul>
-                            <p className="text-muted small mb-4 mb-lg-0">&copy; Your Website 2022. All Rights
+                            <p className="text-muted small mb-4 mb-lg-0">&copy; Med-Ex 2022. All Rights
                                 Reserved.</p>
                         </div>
                         <div className="col-lg-6 h-100 text-center text-lg-end my-auto">
@@ -399,16 +464,13 @@ export default function Home() {
                                     <a href="#!"><i className="bi-twitter fs-3"></i></a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="#!"><i className="bi-instagram fs-3"></i></a>
+                                    <a href="https://www.instagram.com/medex_bureau/" target="_blank" rel="noreferrer"><i className="bi-instagram fs-3"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </footer>
-            {/*<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>*/}
-            {/*<script src="js/scripts.js"></script>*/}
-            {/*<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>*/}
         </div>
     )
 }
