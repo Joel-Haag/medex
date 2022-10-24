@@ -2,10 +2,6 @@ import React, {useEffect, useState} from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import testimonial3 from "../public/img/testimonials-3.jpg"
-import workingwoman1 from "../public/img/workingwoman1.jpg"
-import workingwoman2 from "../public/img/workingwoman2.jpg"
-import workingwoman3 from "../public/img/workingwoman3.jpg"
-import workingwoman4 from "../public/img/workingwoman4.jpg"
 import ashlea2 from "../public/img/ashlea2.png"
 
 import Link from "next/link";
@@ -91,7 +87,7 @@ export default function Home() {
                     <div className="row justify-content-start">
                         <div className="col-xl-20">
                             <div className="text-left text-white">
-                                <h2 className=" fw-normal">Creating the billing experience that health care professionals deserve</h2>
+                                <h2 className=" fw-normal">Creating the billing experience that health care professionals deserve.</h2>
                             </div>
                         </div>
                     </div>
