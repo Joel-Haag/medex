@@ -37,7 +37,7 @@ export default function Home() {
     const scrollDirection = useScrollDirection();
     return (
 
-        <div>
+        <div className={'overflow-hidden'}>
             <Head>
                 <title>Med-Ex Medical Billing</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
