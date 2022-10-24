@@ -2,10 +2,6 @@ import React, {useEffect, useState} from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import testimonial3 from "../public/img/testimonials-3.jpg"
-import workingwoman1 from "../public/img/workingwoman1.jpg"
-import workingwoman2 from "../public/img/workingwoman2.jpg"
-import workingwoman3 from "../public/img/workingwoman3.jpg"
-import workingwoman4 from "../public/img/workingwoman4.jpg"
 import Link from "next/link";
 
 function useScrollDirection() {
@@ -40,7 +36,7 @@ export default function Home() {
                 <title>Med-Ex</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
                       rel="stylesheet" type="text/css"/>
-                <link rel="icon" href="/medexLogo.ico" />
+                <link rel="icon" href="/medexLogo.ico"/>
             </Head>
             <nav className={`navbar navbar-light  sticky fixed-top ${scrollDirection === "down" ? "hide" : "show"}`}>
                 {/*<div className="container">*/}
@@ -64,9 +60,11 @@ export default function Home() {
                     <div className="col-md-auto text-center nav-center">
                         <a className="text-white text-decoration-none fw-bold" href="#contact">Contact</a>
                     </div>
+                    <div className='col-md-auto text-center nav-center text-white'><HamburgerMenu /></div>
                     {/*</div>*/}
                 </div>
             </nav>
+
 
             {/*Masthead*/}
 
@@ -87,7 +85,7 @@ export default function Home() {
                         </div>
                     </div>
                     {/*<div  className="row justify-content-start">*/}
-                    <div  className={`row justify-content-start`}>
+                    <div className={`row justify-content-start`}>
                         <div className="col-xl-20">
                             <div className="text-left text-white">
                                 <h3 className="mb-5 fw-light">Our billing department with Over 20 years&#39; experience
@@ -276,10 +274,10 @@ export default function Home() {
                         <div className="col-md-6 col-lg-4 item">
                             <div className="box">
                                 <Image
-                                className="rounded-circle"
-                                src={testimonial3}
-                                alt="..."
-                            />
+                                    className="rounded-circle"
+                                    src={testimonial3}
+                                    alt="..."
+                                />
                                 <h3 className="name">Natalie</h3>
                                 <a className="" href="mailto:natalie@medexbureau.co.za">natalie@medexbureau.co.za</a>
                                 <p className="description">011 867 0191</p>
@@ -307,9 +305,9 @@ export default function Home() {
                         </div>
                         <div className="col-md-6 col-lg-4 item">
                             <div className="box"
-                            //      style={{
-                            //     backgroundImage: "url(img/businesscard.png)" ,
-                            // }}
+                                //      style={{
+                                //     backgroundImage: "url(img/businesscard.png)" ,
+                                // }}
                             >
                                 {/*<Image*/}
                                 {/*className="rounded-circle"*/}
@@ -327,7 +325,8 @@ export default function Home() {
                                 {/*src={testimonial3}*/}
                                 {/*alt="..."/>*/}
                                 <h3 className="name">Dominique</h3>
-                                <a className="" href="mailto:dominique@medexbureau.co.za">dominique@medexbureau.co.za</a>
+                                <a className=""
+                                   href="mailto:dominique@medexbureau.co.za">dominique@medexbureau.co.za</a>
                                 <p className="description">..</p>
                             </div>
                         </div>
@@ -353,7 +352,6 @@ export default function Home() {
                                 <p className="description">..</p>
                             </div>
                         </div>
-
 
 
                     </div>
@@ -449,7 +447,8 @@ export default function Home() {
                             <ul className="list-inline mb-2">
                                 <li className="list-inline-item">⋅</li>
                                 <li className="list-inline-item"><p> Whatsapp or call us on - 066 221 0163</p></li>
-                                <li className="list-inline-item float-end"><a href="mailto:medex@isat.co.za">medex@isat.co.za</a></li>
+                                <li className="list-inline-item float-end"><a
+                                    href="mailto:medex@isat.co.za">medex@isat.co.za</a></li>
 
                             </ul>
                             <p className="text-muted small mb-4 mb-lg-0">&copy; Med-Ex 2022. All Rights
@@ -464,7 +463,8 @@ export default function Home() {
                                     <a href="#!"><i className="bi-twitter fs-3"></i></a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.instagram.com/medex_bureau/" target="_blank" rel="noreferrer"><i className="bi-instagram fs-3"></i></a>
+                                    <a href="https://www.instagram.com/medex_bureau/" target="_blank"
+                                       rel="noreferrer"><i className="bi-instagram fs-3"></i></a>
                                 </li>
                             </ul>
                         </div>
