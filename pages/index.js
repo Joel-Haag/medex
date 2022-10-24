@@ -2,6 +2,12 @@ import React, {useEffect, useState} from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import testimonial3 from "../public/img/testimonials-3.jpg"
+import workingwoman1 from "../public/img/workingwoman1.jpg"
+import workingwoman2 from "../public/img/workingwoman2.jpg"
+import workingwoman3 from "../public/img/workingwoman3.jpg"
+import workingwoman4 from "../public/img/workingwoman4.jpg"
+import ashlea2 from "../public/img/ashlea2.png"
+
 import Link from "next/link";
 
 function useScrollDirection() {
@@ -33,10 +39,14 @@ export default function Home() {
 
         <div>
             <Head>
-                <title>Med-Ex</title>
+                <title>Med-Ex Medical Billing</title>
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
                       rel="stylesheet" type="text/css"/>
-                <link rel="icon" href="/medexLogo.ico"/>
+                <link rel="icon" href="/medexLogo.ico" />
+                <meta name="description" content="The best prices for the best services. Creating the billing experience that health care professionals deserve"/>
+                    <meta name="keywords" content="medical, ease, billing, medical billing, Authease, "/>
+                        <meta name="author" content="Joel Haag"/>
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
             <nav className={`navbar navbar-light  sticky fixed-top ${scrollDirection === "down" ? "hide" : "show"}`}>
                 {/*<div className="container">*/}
@@ -58,13 +68,14 @@ export default function Home() {
                            href="#testimonial">Testimonial</a>
                     </div>
                     <div className="col-md-auto text-center nav-center">
+                        <a className="text-white text-decoration-none fw-bold" href="#team">Team</a>
+                    </div>
+                    <div className="col-md-auto text-center nav-center">
                         <a className="text-white text-decoration-none fw-bold" href="#contact">Contact</a>
                     </div>
-                    <div className='col-md-auto text-center nav-center text-white'><HamburgerMenu /></div>
                     {/*</div>*/}
                 </div>
             </nav>
-
 
             {/*Masthead*/}
 
@@ -73,25 +84,22 @@ export default function Home() {
                     <div className="row justify-content-start">
                         <div className="col-xl-20">
                             <div className="text-left text-white">
-                                <h1 className="mb-5 fw-semibold">Medical Billing Done With EASE</h1>
+                                <h1 className="mb-5 fw-semibold">MED-EX BILLING BUREAU</h1>
                             </div>
                         </div>
                     </div>
                     <div className="row justify-content-start">
                         <div className="col-xl-20">
                             <div className="text-left text-white">
-                                <h2 className="mb-5 fw-normal">The best prices for the best services</h2>
+                                <h2 className=" fw-normal">Creating the billing experience that health care professionals deserve</h2>
                             </div>
                         </div>
                     </div>
                     {/*<div  className="row justify-content-start">*/}
-                    <div className={`row justify-content-start`}>
+                    <div  className={`row justify-content-start`}>
                         <div className="col-xl-20">
                             <div className="text-left text-white">
-                                <h3 className="mb-5 fw-light">Our billing department with Over 20 years&#39; experience
-                                    has a team of dedicated credit controllers, looking after you&#39;re practice.
-                                    We pride ourselves in the services we can offer your practice. Managing your
-                                    accounts with professionalism, efficiency, and dedication. </h3>
+                                <h2 className="mb-5 fw-normal">Providing solutions to free doctors from administrative and financial burden. </h2>
                             </div>
                         </div>
                     </div>
@@ -262,8 +270,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <div className="team-boxed bg-white">
-                <h2 className="text-center fw-normal">PROUDLY WOMAN EMPOWERED</h2>
+            <div className="team-boxed bg-white" id="team">
+                {/*<h2 className="text-center fw-normal">PROUDLY WOMAN EMPOWERED</h2>*/}
                 <h3 className="text-center">Feel free to contact us directly for more information</h3>
                 <div className="container">
                     <div className="intro">
@@ -271,51 +279,85 @@ export default function Home() {
                         {/*<p className="text-center">T</p>*/}
                     </div>
                     <div className="row people">
-                        <div className="col-md-6 col-lg-4 item">
+                        <div className="col-md-12 col-lg-12 item">
                             <div className="box">
                                 <Image
-                                    className="rounded-circle"
-                                    src={testimonial3}
-                                    alt="..."
-                                />
-                                <h3 className="name">Natalie</h3>
-                                <a className="" href="mailto:natalie@medexbureau.co.za">natalie@medexbureau.co.za</a>
-                                <p className="description">011 867 0191</p>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-4 item">
-                            <div className="box"><Image
                                 className="rounded-circle"
-                                src={testimonial3}
-                                alt="..."/>
-                                <h3 className="name">Sina</h3>
-                                <a className="" href="mailto:sina@medexbureau.co.za">sina@medexbureau.co.za</a>
-                                <p className="description">011 867 4597</p>
+                                src={ashlea2}
+                                alt="..."
+                                // width="10000vw"
+                                // layout="responsive"
+                            />
+                                <h3 className="name">Ashlea</h3>
+                                <a className="" href="mailto:natalie@medexbureau.co.za">ashlea@medexbureau.co.za</a>
+
+                                <p className="description"
+                                ><i className="bi bi-telephone-fill"> </i>
+                                    066 221 0163</p>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 item">
-                            <div className="box"><Image
-                                className="rounded-circle"
-                                src={testimonial3}
-                                alt="..."/>
-                                <h3 className="name">Claudia</h3>
-                                <a className="" href="mailto:claudia@medexbureau.co.za">claudia@medexbureau.co.za</a>
-                                <p className="description">011 867 2975</p>
-                            </div>
-                        </div>
+                        {/*<div className="col-md-6 col-lg-4 item">*/}
+                        {/*    <div className="box"><Image*/}
+                        {/*        className="rounded-circle"*/}
+                        {/*        src={testimonial3}*/}
+                        {/*        alt="..."/>*/}
+                        {/*        <h3 className="name">Sina</h3>*/}
+                        {/*        <a className="" href="mailto:sina@medexbureau.co.za">sina@medexbureau.co.za</a>*/}
+                        {/*        <p className="description">011 867 4597</p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-md-6 col-lg-4 item">*/}
+                        {/*    <div className="box"><Image*/}
+                        {/*        className="rounded-circle"*/}
+                        {/*        src={testimonial3}*/}
+                        {/*        alt="..."/>*/}
+                        {/*        <h3 className="name">Claudia</h3>*/}
+                        {/*        <a className="" href="mailto:claudia@medexbureau.co.za">claudia@medexbureau.co.za</a>*/}
+                        {/*        <p className="description">011 867 2975</p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                         <div className="col-md-6 col-lg-4 item">
                             <div className="box"
-                                //      style={{
-                                //     backgroundImage: "url(img/businesscard.png)" ,
-                                // }}
                             >
+
+                                <h3 className="name">Natalie</h3>
+                                <a className="" href="mailto:natalie@medexbureau.co.za">natalie@medexbureau.co.za</a>
+                                <p className="description"> <i className="bi bi-telephone-fill"> </i>
+                                    011 867 0191</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box">
                                 {/*<Image*/}
                                 {/*className="rounded-circle"*/}
                                 {/*src={testimonial3}*/}
                                 {/*alt="..."/>*/}
+                                <h3 className="name">Sina</h3>
+                                <a className="" href="mailto:sina@medexbureau.co.za">sina@medexbureau.co.za</a>
+                                <p className="description"> <i className="bi bi-telephone-fill"> </i>
+                                    011 867 4597</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box">
+                                {/*<Image*/}
+                                {/*className="rounded-circle"*/}
+                                {/*src={testimonial3}*/}
+                                {/*alt="..."/>*/}
+                                <h3 className="name">Claudia</h3>
+                                <a className="" href="mailto:claudia@medexbureau.co.za">claudia@medexbureau.co.za</a>
+                                <p className="description"> <i className="bi bi-telephone-fill"> </i>
+                                    011 867 2975</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-4 item">
+                            <div className="box"
+                            >
+
                                 <h3 className="name">Kelly</h3>
                                 <a className="" href="mailto:kelly@medexbureau.co.za">kelly@medexbureau.co.za</a>
-                                <p className="description">011 867 8178</p>
+                                <p className="description"> ..
+                                    </p>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-4 item">
@@ -325,8 +367,7 @@ export default function Home() {
                                 {/*src={testimonial3}*/}
                                 {/*alt="..."/>*/}
                                 <h3 className="name">Dominique</h3>
-                                <a className=""
-                                   href="mailto:dominique@medexbureau.co.za">dominique@medexbureau.co.za</a>
+                                <a className="" href="mailto:dominique@medexbureau.co.za">dominique@medexbureau.co.za</a>
                                 <p className="description">..</p>
                             </div>
                         </div>
@@ -341,17 +382,7 @@ export default function Home() {
                                 <p className="description">..</p>
                             </div>
                         </div>
-                        <div className="col-md-6 col-lg-4 item">
-                            <div className="box">
-                                {/*<Image*/}
-                                {/*className="rounded-circle"*/}
-                                {/*src={testimonial3}*/}
-                                {/*alt="..."/>*/}
-                                <h3 className="name">Ashlea</h3>
-                                <a className="" href="mailto:ashlea@medexbureau.co.za">ashlea@medexbureau.co.za</a>
-                                <p className="description">..</p>
-                            </div>
-                        </div>
+
 
 
                     </div>
@@ -446,9 +477,9 @@ export default function Home() {
                         <div className="col-lg-6 h-100 text-center text-lg-start my-auto">
                             <ul className="list-inline mb-2">
                                 <li className="list-inline-item">⋅</li>
-                                <li className="list-inline-item"><p> Whatsapp or call us on - 066 221 0163</p></li>
-                                <li className="list-inline-item float-end"><a
-                                    href="mailto:medex@isat.co.za">medex@isat.co.za</a></li>
+                                {/*<li className="list-inline-item"><p> Whatsapp or call us on - 066 221 0163</p></li>*/}
+                                <i className="bi bi-telephone-fill"> </i><a href="tel:066 221 0163">066 221 0163</a>
+                                <li className="list-inline-item float-end"><a href="mailto:medex@isat.co.za">medex@isat.co.za</a></li>
 
                             </ul>
                             <p className="text-muted small mb-4 mb-lg-0">&copy; Med-Ex 2022. All Rights
@@ -457,14 +488,13 @@ export default function Home() {
                         <div className="col-lg-6 h-100 text-center text-lg-end my-auto">
                             <ul className="list-inline mb-0">
                                 <li className="list-inline-item me-4">
-                                    <a href="#!"><i className="bi-facebook fs-3"></i></a>
+                                    <a href="https://www.facebook.com/MedexBureau" target="_blank" rel="noreferrer"><i className="bi-facebook fs-3"></i></a>
                                 </li>
                                 <li className="list-inline-item me-4">
-                                    <a href="#!"><i className="bi-twitter fs-3"></i></a>
+                                    <a href="https://www.linkedin.com/in/MedexBureau" target="_blank" rel="noreferrer"><i className="bi bi-linkedin fs-3"></i></a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="https://www.instagram.com/medex_bureau/" target="_blank"
-                                       rel="noreferrer"><i className="bi-instagram fs-3"></i></a>
+                                    <a href="https://www.instagram.com/medex_bureau/" target="_blank" rel="noreferrer"><i className="bi-instagram fs-3"></i></a>
                                 </li>
                             </ul>
                         </div>
