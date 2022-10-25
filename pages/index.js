@@ -39,6 +39,11 @@ export default function Home() {
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
                       rel="stylesheet" type="text/css"/>
                 <link rel="icon" href="/medexLogo.ico"/>
+                <link
+                    rel="canonical"
+                    href="https://www.medexbureau.com/"
+                    key="canonical"
+                />
                 <meta name="description"
                       content="The best prices for the best services. Creating the billing experience that health care professionals deserve"/>
                 <meta name="keywords" content="medical, ease, billing, medical billing, Authease, "/>
