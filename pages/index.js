@@ -41,7 +41,7 @@ export default function Home() {
                 <link rel="icon" href="/medexLogo.ico"/>
                 <link
                     rel="canonical"
-                    href="https://www.medexbureau.com/"
+                    href="https://www.medexbureau.com"
                     key="canonical"
                 />
                 <meta name="description"
