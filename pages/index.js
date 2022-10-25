@@ -39,6 +39,7 @@ export default function Home() {
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
                       rel="stylesheet" type="text/css"/>
                 <link rel="icon" href="/medexLogo.ico"/>
+                <link rel="apple-touch-icon" href="/medexLogo.ico"/>
                 <link
                     rel="canonical"
                     href="https://www.medexbureau.com"
