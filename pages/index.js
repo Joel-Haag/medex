@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import testimonial3 from "../public/img/testimonials-3.jpg"
 import ashlea2 from "../public/img/ashlea2.png"
+import {Analytics} from '@vercel/analytics/react';
 
 import Link from "next/link";
 
@@ -473,6 +474,7 @@ export default function Home() {
                     </div>
                 </div>
             </footer>
+            <Analytics/>
         </div>
     )
 }
