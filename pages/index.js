@@ -30,6 +30,22 @@ function useScrollDirection() {
     return scrollDirection;
 }
 
+async function handleOnSubmit(e) {
+    e.preventDefault();
+
+    const formData = {};
+
+    Array.from(e.currentTarget.elements).forEach(field => {
+        if ( !field.name ) return;
+        formData[field.name] = field.value;
+    });
+
+    await fetch('/api/mail', {
+        method: 'POST',
+        body: JSON.stringify(formData)
+    });
+}
+
 export default function Home() {
     const scrollDirection = useScrollDirection();
     return (
@@ -370,17 +386,18 @@ export default function Home() {
                             {/*To make this form functional, sign up at*/}
                             {/* https://startbootstrap.com/solution/contact-forms-->*/}
                             {/*< to get an API token!*/}
-                            <form className="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
+                            <form className="form-subscribe" id="contactFormFooter" method="post"  onSubmit={handleOnSubmit}>
                                 {/*Email address input*/}
-
                                 <div className="row">
                                     <div className="col-md-6 col-sm-12 pb-2">
-                                        <input className="form-control form-control-lg" id="fname"
+                                        <input className="form-control form-control-lg" id="name"
+                                               name="name"
                                                type="text"
                                                placeholder="First Name"/>
                                     </div>
                                     <div className="col-md-6 col-sm-12 pb-2">
                                         <input className="form-control form-control-lg" id="lname"
+                                               name="lname"
                                                type="text"
                                                placeholder="Last Name"/>
                                     </div>
@@ -388,6 +405,7 @@ export default function Home() {
                                 <div className={'row'}>
                                     <div className="col-md-12 col-sm-12 pb-2">
                                         <input className="form-control form-control-lg" id="emailAddressBelow"
+                                               name="email"
                                                type="email"
                                                placeholder="Email Address" data-sb-validations="required,email"/>
                                         <div className="invalid-feedback text-white"
@@ -403,6 +421,7 @@ export default function Home() {
                                 <div className={'row'}>
                                     <div className="col-md-12 col-sm-12 pb-2">
                                         <input className="form-control form-control-lg mb-2" id="ftext"
+                                               name="message"
                                                type="text"
                                                placeholder="How can we help you?"/>
 
@@ -410,8 +429,8 @@ export default function Home() {
                                 </div>
                                 <div className={'row'}>
                                     <div className="col-md-12 col-sm-12">
-                                        <button className="btn btn-primary btn-lg form-control" id="submitButton"
-                                                type="submit">Submit
+                                        <button className="btn btn-primary btn-lg form-control"
+                                                >Submit
                                         </button>
                                     </div>
                                 </div>
