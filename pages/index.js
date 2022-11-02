@@ -81,21 +81,21 @@ export default function Home() {
                     <div className="collapse navbar-collapse flex-md-row-reverse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item me-lg-4 me-sm-0">
-                                <a className="nav-link active fw-bold text-center fs-4 " aria-current="page"
+                                <a className="nav-link active fw-bold text-center fs-5 " aria-current="page"
                                    href="#about">About</a>
                             </li>
                             <li className="nav-item me-lg-4 me-sm-0">
-                                <a className="nav-link active fw-bold text-center fs-4 " href="#operate">Operations</a>
+                                <a className="nav-link active fw-bold text-center fs-5 " href="#operate">Operations</a>
                             </li>
                             <li className="nav-item me-lg-4 me-sm-0">
-                                <a className="nav-link active fw-bold text-center fs-4 "
+                                <a className="nav-link active fw-bold text-center fs-5 "
                                    href="#testimonial">Testimonial</a>
                             </li>
                             <li className="nav-item me-lg-4 me-sm-0">
-                                <a className="nav-link active fw-bold text-center fs-4 " href="#team">Team</a>
+                                <a className="nav-link active fw-bold text-center fs-5 " href="#team">Team</a>
                             </li>
                             <li className="nav-item me-lg-4 me-sm-0">
-                                <a className="nav-link active fw-bold text-center fs-4 " href="#contact">Contact</a>
+                                <a className="nav-link active fw-bold text-center fs-5 " href="#contact">Contact</a>
                             </li>
 
                         </ul>
