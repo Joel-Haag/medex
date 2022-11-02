@@ -5,8 +5,6 @@ import testimonial3 from "../public/img/testimonials-3.jpg"
 import ashlea2 from "../public/img/ashlea2.png"
 import {Analytics} from '@vercel/analytics/react';
 
-import Link from "next/link";
-
 function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState(null);
 
@@ -68,32 +66,34 @@ export default function Home() {
                 <meta name="author" content="Joel Haag"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
-            <nav className={`navbar navbar-light  sticky fixed-top ${scrollDirection === "down" ? "hide" : "show"}`}>
-                {/*<div className="container">*/}
-                <div className="row container-fluid">
-                    <div className="col-md-4 col-sm justify-content-lg-start nav-center">
-                        <Link href="/">
-                            <a className="navbar-brand text-white text-decoration-none fw-bold m-0">Med-Ex</a>
-                        </Link>
-                    </div>
+            <nav
+                className={`navbar navbar-expand-lg navbar-light bg-light  sticky fixed-top pt-2 pb-2  ${scrollDirection === "down" ? "hide" : "show"}`}>
+                <div className="container-fluid">
+                    <a className="navbar-brand fw-bold" href="/">Med-Ex</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse flex-md-row-reverse" id="navbarNavDropdown">
+                        <ul className="navbar-nav">
+                            <li className="nav-item me-lg-4 me-sm-0">
+                                <a className="nav-link active fw-bold text-center fs-4 " aria-current="page" href="#about">About</a>
+                            </li>
+                            <li className="nav-item me-lg-4 me-sm-0">
+                                <a className="nav-link active fw-bold text-center fs-4 " href="#operate">Operations</a>
+                            </li>
+                            <li className="nav-item me-lg-4 me-sm-0">
+                                <a className="nav-link active fw-bold text-center fs-4 " href="#testimonial">Testimonial</a>
+                            </li>
+                            <li className="nav-item me-lg-4 me-sm-0">
+                                <a className="nav-link active fw-bold text-center fs-4 " href="#team">Team</a>
+                            </li><li className="nav-item me-lg-4 me-sm-0">
+                                <a className="nav-link active fw-bold text-center fs-4 " href="#contact">Contact</a>
+                            </li>
 
-                    <div className="col-md-auto text-center nav-center">
-                        <a className="text-white text-decoration-none fw-bold " href="#about">About</a>
+                        </ul>
                     </div>
-                    <div className="col-md-auto text-center nav-center">
-                        <a className="text-white text-decoration-none fw-bold" href="#operate">Operations</a>
-                    </div>
-                    <div className="col-md-auto text-center nav-center">
-                        <a className="text-white text-decoration-none fw-bold"
-                           href="#testimonial">Testimonial</a>
-                    </div>
-                    <div className="col-md-auto text-center nav-center">
-                        <a className="text-white text-decoration-none fw-bold" href="#team">Team</a>
-                    </div>
-                    <div className="col-md-auto text-center nav-center">
-                        <a className="text-white text-decoration-none fw-bold" href="#contact">Contact</a>
-                    </div>
-                    {/*</div>*/}
                 </div>
             </nav>
 
