@@ -36,7 +36,7 @@ async function handleOnSubmit(e) {
     const formData = {};
 
     Array.from(e.currentTarget.elements).forEach(field => {
-        if ( !field.name ) return;
+        if (!field.name) return;
         formData[field.name] = field.value;
     });
 
@@ -374,6 +374,29 @@ export default function Home() {
                 </div>
             </div>
             <section className="call-to-action text-white text-center" id="contact">
+                {/*<button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">*/}
+                {/*    Launch demo modal*/}
+                {/*</button>*/}
+
+                {/*<div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel"*/}
+                {/*     aria-hidden="true">*/}
+                {/*    <div className="modal-dialog">*/}
+                {/*        <div className="modal-content">*/}
+                {/*            <div className="modal-header">*/}
+                {/*                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>*/}
+                {/*                <button type="button" className="btn-close" data-bs-dismiss="modal"*/}
+                {/*                        aria-label="Close"></button>*/}
+                {/*            </div>*/}
+                {/*            <div className="modal-body">*/}
+                {/*                ...*/}
+                {/*            </div>*/}
+                {/*            <div className="modal-footer">*/}
+                {/*                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close*/}
+                {/*                </button>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <div className="container position-relative">
                     <div className="row justify-content-center">
                         <div className="col-xl-6">
@@ -386,7 +409,8 @@ export default function Home() {
                             {/*To make this form functional, sign up at*/}
                             {/* https://startbootstrap.com/solution/contact-forms-->*/}
                             {/*< to get an API token!*/}
-                            <form className="form-subscribe" id="contactFormFooter" method="post"  onSubmit={handleOnSubmit}>
+                            <form className="form-subscribe" id="contactFormFooter" method="post"
+                                  onSubmit={handleOnSubmit}>
                                 {/*Email address input*/}
                                 <div className="row">
                                     <div className="col-md-6 col-sm-12 pb-2">
@@ -429,8 +453,9 @@ export default function Home() {
                                 </div>
                                 <div className={'row'}>
                                     <div className="col-md-12 col-sm-12">
-                                        <button className="btn btn-primary btn-lg form-control"
-                                                >Submit
+                                        <button className="btn btn-primary btn-lg form-control" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"
+                                        >Submit
                                         </button>
                                     </div>
                                 </div>
@@ -493,6 +518,26 @@ export default function Home() {
                     </div>
                 </div>
             </footer>
+            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Success</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            Thank you for reaching out, we will respond shortly..
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <Analytics/>
         </div>
     )

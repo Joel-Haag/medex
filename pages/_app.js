@@ -8,6 +8,10 @@ import {useEffect} from "react";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
+    typeof document !== undefined ? require('bootstrap/dist/js/bootstrap') : null
+  }, [])
+
+  useEffect(() => {
     AOS.init({
       // easing: "ease-out-cubic",
       // once: true,
