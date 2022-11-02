@@ -4,6 +4,7 @@ import Image from 'next/image'
 import testimonial3 from "../public/img/testimonials-3.jpg"
 import ashlea2 from "../public/img/ashlea2.png"
 import {Analytics} from '@vercel/analytics/react';
+import Link from "next/link";
 
 function useScrollDirection() {
     const [scrollDirection, setScrollDirection] = useState(null);
@@ -69,7 +70,9 @@ export default function Home() {
             <nav
                 className={`navbar navbar-expand-lg navbar-light bg-light  sticky fixed-top pt-2 pb-2  ${scrollDirection === "down" ? "hide" : "show"}`}>
                 <div className="container-fluid">
-                    <a className="navbar-brand fw-bold" href="/">Med-Ex</a>
+                    <Link href="/">
+                        <a className="navbar-brand fw-bold">Med-Ex</a>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -78,17 +81,20 @@ export default function Home() {
                     <div className="collapse navbar-collapse flex-md-row-reverse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item me-lg-4 me-sm-0">
-                                <a className="nav-link active fw-bold text-center fs-4 " aria-current="page" href="#about">About</a>
+                                <a className="nav-link active fw-bold text-center fs-4 " aria-current="page"
+                                   href="#about">About</a>
                             </li>
                             <li className="nav-item me-lg-4 me-sm-0">
                                 <a className="nav-link active fw-bold text-center fs-4 " href="#operate">Operations</a>
                             </li>
                             <li className="nav-item me-lg-4 me-sm-0">
-                                <a className="nav-link active fw-bold text-center fs-4 " href="#testimonial">Testimonial</a>
+                                <a className="nav-link active fw-bold text-center fs-4 "
+                                   href="#testimonial">Testimonial</a>
                             </li>
                             <li className="nav-item me-lg-4 me-sm-0">
                                 <a className="nav-link active fw-bold text-center fs-4 " href="#team">Team</a>
-                            </li><li className="nav-item me-lg-4 me-sm-0">
+                            </li>
+                            <li className="nav-item me-lg-4 me-sm-0">
                                 <a className="nav-link active fw-bold text-center fs-4 " href="#contact">Contact</a>
                             </li>
 
